@@ -1,0 +1,245 @@
+body{
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+
+    font-family: 'Passion One', cursive;
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    margin: 0;
+}
+/* #region Barra de menú */
+p{
+    margin-bottom: 1.6em;
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.header{
+    background: #000;
+    padding: 2rem 0;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a{
+    text-decoration: none;
+}
+img[src="src/logo1.png"]{
+    display: inline-flex;    
+    width: 70px;
+    height: auto;
+}
+.a{
+    color: #fff;
+}
+.logo-nav-conatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    color: #008FF3 ;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem ;
+    transition: all 0.4s linear;
+    border-radius: 10px ;
+}
+.navigation ul li a:hover{
+    background:  #4a4a4a;
+}
+.main{
+    padding-top: 9rem;
+}
+/* #endregion */
+/* #region cuerpo */
+.body{
+    color: #fff;
+}
+.containera{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+}
+.containera a{
+    display: inline-block;
+    padding: 7px 0;
+    color: #000;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #FF0201;
+    border-radius: 50px;
+    background: #FF0201;
+}
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    animation: moverAbajo 1s ease-in;
+}
+.textos{
+    width: 50%;
+    color: #092980;
+}
+.textos h1{
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+}
+.textos h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    animation: moverIzquierda 1s ease-in;
+}
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top:30px;
+    border: 1px solid #FF0201;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #000 0 7px 10px ;
+}
+/* #endregion */
+/* #region Pie de página */
+footer{
+    width: 100%;
+    background: #202020;
+    color: #fff;
+    margin-top: 7%;
+}
+.continer-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px; 
+}
+.container-Body{
+    display: flex;
+}
+.col1{
+    max-width: 400px;
+    padding-left: 20px;
+}
+.col h1{
+    font-size: 20px;
+}
+.col1 p{
+    font-size: 1.3rem;
+    color: #c7c7c7;
+    margin-top: 20px;
+}
+.col2{
+    max-width: 400px;
+    margin-left: 300px;
+}
+.col2 h1{
+    font-size: 35px;
+}
+.row{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    display: flex;
+}
+.row img{
+    width: 36px;
+    height: 36px;
+}
+.row a{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #c7c7c7;
+}
+.container-footer{
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 13px;
+    padding-left: 30px;
+}
+.copyrigth{
+    font-size: 1.1rem;
+    color: #c7c7c7;
+}
+/* #endregion */
+/* #region loader */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #000;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #000 transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader{
+    background: rgba(155, 155, 155, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    z-index: 100000;
+    clip-path: circle(100% at 50% 50%);
+    transition: clip-path 0.3s ease-in-out;
+}
+.loader2{
+    clip-path: circle(0.0% at 50% 50%);
+}
+/* #endregion */
+
