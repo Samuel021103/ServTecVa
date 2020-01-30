@@ -65,11 +65,11 @@ img[src="src/logo1.png"]{
 .navigation ul li a:hover{
     background:  #4a4a4a;
 }
+/* #endregion */
+/* #region cuerpo */
 .main{
     padding-top: 9rem;
 }
-/* #endregion */
-/* #region cuerpo */
 .body{
     color: #fff;
 }
@@ -242,4 +242,215 @@ footer{
     clip-path: circle(0.0% at 50% 50%);
 }
 /* #endregion */
+/* #region Responsivas */
+@media screen and (max-width: 1115px){
+    img{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 985px){
+    img{
+        height: 350px;
+    }
+    .textos h1{
+        font-size: 3.5rem;
+    }
+    .textos h2{
+        font-size: 2rem;
+    }
+    .col h1{
+        font-size: 15px;
+    }
+    .col1 p{
+        font-size: 1.2rem;
+    }
+    .col2 h1{
+        font-size: 35px;
+    }
+    .row{
+        font-size: 1.3rem;
+    }
+}
 
+@media screen and (max-width: 810px){
+    img{
+        height: 250px;
+    }
+    .textos h1{
+        font-size: 3.2rem;
+    }
+    .textos h2{
+        font-size: 1.8rem;
+    }
+    .col1 h1{
+        font-size: 2.2rem;
+    }
+    .col1 p{
+        font-size: 1.1rem;
+        margin-bottom: 7px;
+    }
+    .col2 h1{
+        font-size: 2.2rem;
+    }
+    .row{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 710px){
+    img{
+        height: 250px;
+    }
+    .textos h1{
+        font-size: 3.1rem;
+    }
+    .textos h2{
+        font-size: 1.7rem;
+    }
+    .col1 h1{
+        font-size: 2.1rem;
+    }
+    .col p{
+        font-size: 1rem;
+        margin-bottom: 1px;
+    }
+    .row{
+        font-size: 1rem;
+    }
+    .container{
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width: 690px){
+    img{
+        height: 230px;
+    }
+    .textos h1{
+        font-size: 2.9rem;
+    }
+    .textos h2{
+        font-size: 1.5rem;
+    }
+    .col h1{
+        font-size: 1.9rem;
+    }
+    .col1{
+        margin-right: auto;
+    }
+    .col2{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 590px){
+    img{
+        height: 210px;
+    }
+    .textos h1{
+        font-size: 2.7rem;
+    }
+    .textos h2{
+        font-size: 1.3rem;
+    }
+    .containera a{
+        padding: 7px 0;
+        width: 89px;
+        border-radius: 50px;
+        font-size: 1rem;
+    }
+    .col h1{
+        font-size: 1.7rem;
+    }
+    .a{
+        font-size: 1.2rem;
+    }
+    .acerca{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 580px){
+    .Logo{
+        font-size: 1em;
+    }
+    .a{
+        font-size: 1.1rem;
+    }
+    .contact{
+        margin-left: -15px;
+        width: 10px;
+    }
+    .col2{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width:480px){
+    img{
+        height: 180px;
+    }
+    .textos h1{
+        font-size: 2.5rem;
+    }
+    .textos h2{
+        font-size: 1.1rem;
+    }
+    .col2{
+        margin-left: 10px;
+    }
+    .col1 h1{
+        font-size: 1.7rem;
+    }
+    .col1 p{
+        font-size: 1rem;
+    }
+    .col2 h1{
+        font-size: 1.7rem;
+    }
+    .Logo{
+        display: none;
+    }
+    .Logo{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 370px){
+    img{
+        height: 150px;
+    }
+    .textos h1{
+        font-size: 1.7rem;
+    }
+    .textos h2{
+        font-size: .9rem;
+        text-transform: none;
+        line-height: normal;
+    }
+    img[src="src/logo1.png"]{  
+        width: 50px;
+        height: auto;
+    }
+    .a{
+        font-size: 15px;
+    }
+    .col2{
+        margin-left: 5px;
+    }
+    .col1 h1{
+        font-size: 1rem;
+    }
+    .col1 p{
+        font-size: .8rem;
+        line-height: 10px;
+    }
+    .col2 h1{
+        font-size: 1rem;
+    }
+    .row a{
+        font-size: 15px;
+        margin-left: 5px;
+    }
+    .row img{
+        width: 30px;
+        height: 30px;
+    }
+    .container-footer div{
+        font-size: 15px;
+    }
+}
