@@ -6,7 +6,7 @@ body{
     font-family: 'Passion One', cursive;
     color: #333;
     font-size: 1.3rem;
-    line-height: 1.3em;
+    /* line-height: 1.3em; */
     margin: 0;
 }
 /* #region Barra de menú */
@@ -67,9 +67,6 @@ img[src="src/logo1.png"]{
 }
 /* #endregion */
 /* #region cuerpo */
-.main{
-    padding-top: 9rem;
-}
 .body{
     color: #fff;
 }
@@ -339,6 +336,24 @@ footer{
     .col2{
         margin-left: 200px;
     }
+    .Logo{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 640px){
+    .Logo{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 615px){
+    .a{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 605px){
+    .a{
+        font-size: 1.1rem;
+    }
 }
 @media screen and (max-width: 590px){
     img{
@@ -360,10 +375,18 @@ footer{
         font-size: 1.7rem;
     }
     .a{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .acerca{
         margin: 0;
+    }
+}
+@media screen and (max-width: 511px){
+    .Logo{
+        display: none;
+    }
+    .Logo{
+        margin-left: 10px;
     }
 }
 @media screen and (max-width: 580px){
@@ -452,5 +475,39 @@ footer{
     }
     .container-footer div{
         font-size: 15px;
+    }
+}
+@media screen and (max-height: 640px){
+    footer{
+        margin-top: 141px;
+    }
+}
+@media screen and (max-height: 731px){
+    footer{
+        margin-top: 103px;
+    }
+}
+@media screen and (max-height: 823px){
+    .main{
+        margin-top: 100px;
+    }
+    footer{
+        margin-top: 194px;
+    }
+}
+@media screen and (max-height: 1024px){
+    .main{
+        margin-top: 100px;
+    }
+    footer{
+        margin-top: 278px;
+    }
+}
+@media screen and (max-height: 1366px){
+    .main{
+        margin-top: 150px;
+    }
+    footer{
+        margin-top: 430px;
     }
 }
