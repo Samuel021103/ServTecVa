@@ -6,13 +6,13 @@ body{
     font-family: 'Passion One', cursive;
     color: #333;
     font-size: 1.3rem;
-    /* line-height: 1.3em; */
     margin: 0;
 }
-/* #region Barra de menú */
-p{
-    margin-bottom: 1.6em;
+body main{
+    padding-top: 150px;
+    margin: 0 100px;
 }
+/* #region Barra de menú */
 .container{
     width: 85%;
     max-width: 850px;
@@ -53,9 +53,6 @@ img[src="src/logo1.png"]{
     padding: 0;
     list-style: none;
 }
-.navigation ul li{
-    display: inline-block;
-}
 .navigation ul li a{
     display: block;
     padding: 0.5rem 1rem ;
@@ -63,7 +60,41 @@ img[src="src/logo1.png"]{
     border-radius: 10px ;
 }
 .navigation ul li a:hover{
-    background:  #4a4a4a;
+    background:  rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+.icono{
+    display: block;
+    animation: moverIzquierda 1s ease-in;
+    z-index: 100;
+}
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 115px;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    /* left: 50%; */
+    right: 10%;
+    flex-direction: column;
+    width: auto;
+    transition: all .9s ease;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    padding: 5px;
+}
+.uno{
+    -webkit-clip-path: circle(140.9% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+.dos{
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+.menu{
+    width: 40px;
+    height: auto;
 }
 /* #endregion */
 /* #region cuerpo */
@@ -240,274 +271,215 @@ footer{
 }
 /* #endregion */
 /* #region Responsivas */
-@media screen and (max-width: 1115px){
+@media screen and (max-width:855px){
     img{
         height: 400px;
     }
+    .textos h1{
+        font-size: 3em;
+    }
+    .textos h2{
+        font-size: 1em;
+    }
+    .col1 h1{
+        font-size: 1.5em;
+    }
+    .col2 h1{
+        font-size: 1.5em;
+    }
+    .col1 p{
+        font-size: .8em;
+    }
+    .row{
+        font-size: .8em;
+    }
+    .copyrigth{
+        font-size: 1.3em;
+    }
 }
-@media screen and (max-width: 985px){
+@media  screen and (max-width: 970px){
+    .enlaces{
+        right: 0;
+    }
+}
+@media screen and (max-width: 870px){
     img{
         height: 350px;
     }
-    .textos h1{
-        font-size: 3.5rem;
-    }
-    .textos h2{
-        font-size: 2rem;
-    }
-    .col h1{
-        font-size: 15px;
-    }
-    .col1 p{
-        font-size: 1.2rem;
-    }
-    .col2 h1{
-        font-size: 35px;
-    }
-    .row{
-        font-size: 1.3rem;
-    }
 }
-
-@media screen and (max-width: 810px){
+@media screen and (max-width: 743px){
     img{
-        height: 250px;
-    }
-    .textos h1{
-        font-size: 3.2rem;
-    }
-    .textos h2{
-        font-size: 1.8rem;
+        height: 300px;
     }
     .col1 h1{
-        font-size: 2.2rem;
-    }
-    .col1 p{
-        font-size: 1.1rem;
-        margin-bottom: 7px;
-    }
-    .col2 h1{
-        font-size: 2.2rem;
-    }
-    .row{
-        font-size: 1.1rem;
-    }
-}
-@media screen and (max-width: 710px){
-    img{
-        height: 250px;
-    }
-    .textos h1{
-        font-size: 3.1rem;
-    }
-    .textos h2{
-        font-size: 1.7rem;
-    }
-    .col1 h1{
-        font-size: 2.1rem;
-    }
-    .col p{
-        font-size: 1rem;
-        margin-bottom: 1px;
-    }
-    .row{
-        font-size: 1rem;
-    }
-    .container{
-        margin: 0 20px;
-    }
-}
-@media screen and (max-width: 690px){
-    img{
-        height: 230px;
-    }
-    .textos h1{
-        font-size: 2.9rem;
-    }
-    .textos h2{
         font-size: 1.5rem;
     }
-    .col h1{
-        font-size: 1.9rem;
+    .col2 h1{
+        font-size: 1.5rem;
     }
-    .col1{
-        margin-right: auto;
+    .col1 p{
+        font-size: .8em;
+    }
+    .row{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 670px){
+    img{
+        height: 280px;
+    }
+}
+@media screen and (max-width: 650px){
+    .textos h1{
+        font-size: 3rem;
+    }
+    .textos h2{
+        font-size: 1.2rem;
     }
     .col2{
         margin-left: 200px;
-    }
-    .Logo{
-        font-size: 1em;
-    }
-}
-@media screen and (max-width: 640px){
-    .Logo{
-        font-size: 1rem;
-    }
-}
-@media screen and (max-width: 615px){
-    .a{
-        font-size: 1.2rem;
-    }
-}
-@media screen and (max-width: 605px){
-    .a{
-        font-size: 1.1rem;
     }
 }
 @media screen and (max-width: 590px){
-    img{
-        height: 210px;
-    }
-    .textos h1{
-        font-size: 2.7rem;
-    }
-    .textos h2{
-        font-size: 1.3rem;
-    }
-    .containera a{
-        padding: 7px 0;
-        width: 89px;
-        border-radius: 50px;
-        font-size: 1rem;
-    }
-    .col h1{
-        font-size: 1.7rem;
-    }
-    .a{
-        font-size: 1.1rem;
-    }
-    .acerca{
+    .main{
         margin: 0;
     }
-}
-@media screen and (max-width: 511px){
-    .Logo{
-        display: none;
-    }
-    .Logo{
-        margin-left: 10px;
-    }
-}
-@media screen and (max-width: 580px){
-    .Logo{
-        font-size: 1em;
-    }
-    .a{
-        font-size: 1.1rem;
-    }
-    .contact{
-        margin-left: -15px;
-        width: 10px;
+    img{
+        height: 200px;
     }
     .col2{
-        margin-left: 200px;
+        margin-left: 150px;
+    }
+    .enlaces{
+        font-size: 1.2rem;
+    }
+    .textos a{
+        font-size: 1.1rem;
+        width: 80px;
+        margin-top: 10px;
     }
 }
-@media screen and (max-width:480px){
+@media screen and (max-width: 460px){
     img{
-        height: 180px;
+        height: 190px;
     }
     .textos h1{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .textos h2{
-        font-size: 1.1rem;
-    }
-    .col2{
-        margin-left: 10px;
-    }
-    .col1 h1{
-        font-size: 1.7rem;
-    }
-    .col1 p{
         font-size: 1rem;
     }
+    .col1 h1{
+        font-size: 1.4rem;
+    }
+    .col1 p{
+        font-size: .8rem;
+    }
     .col2 h1{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
-    .Logo{
-        display: none;
-    }
-    .Logo{
+    .col2 a{
+        font-size: .8rem;
         margin-left: 10px;
     }
+    .col2 img{
+        width: 30px;
+        height: 30px;
+    }
+    .col2{
+        margin-left: 100px;
+    }
+    .textos a{
+        font-size: 1rem;
+        width: 70px;
+    }
 }
-@media screen and (max-width: 370px){
+@media screen and (max-width: 410px){
+    .main{
+        padding-top: 90px;
+        margin: 30px;
+    }
+}@media screen and (max-width: 380px){
     img{
         height: 150px;
     }
     .textos h1{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     .textos h2{
-        font-size: .9rem;
-        text-transform: none;
-        line-height: normal;
+        font-size: .8rem;
     }
-    img[src="src/logo1.png"]{  
-        width: 50px;
-        height: auto;
+    .header img{
+        width: 40px;
     }
-    .a{
-        font-size: 15px;
+    .icono img{
+        width: 30px;
     }
-    .col2{
-        margin-left: 5px;
+    .header{
+        height: 20px;
+    }
+    .enlaces{
+        top: 80px;
+        font-size: 1rem;
     }
     .col1 h1{
-        font-size: 1rem;
+        font-size: 15px;
     }
     .col1 p{
-        font-size: .8rem;
-        line-height: 10px;
+        font-size: 10px;
     }
-    .col2 h1{
-        font-size: 1rem;
-    }
-    .row a{
-        font-size: 15px;
+    .col2 a{
+        font-size: 10px;
         margin-left: 5px;
     }
-    .row img{
-        width: 30px;
-        height: 30px;
+    .col2 img{
+        width: 25px;
+        height: auto;
     }
-    .container-footer div{
+    .col2 h1{
         font-size: 15px;
+    }
+    .copyrigth{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 290px){
+    .Logo{
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-height: 640px){
+    .main{
+        margin-top: 100px;
+    }
     footer{
-        margin-top: 141px;
+        margin-top: 115px;
     }
 }
 @media screen and (max-height: 731px){
     footer{
-        margin-top: 103px;
+        margin-top: 90px;
     }
 }
-@media screen and (max-height: 823px){
+@media screen and (max-height: 825px){
+    footer{
+        margin-top: 90px;
+    }
+}
+@media screen and (max-height: 670px){
     .main{
-        margin-top: 100px;
+        margin-top: 90px;
     }
     footer{
-        margin-top: 194px;
+        margin-top: 127px;
     }
 }
-@media screen and (max-height: 1024px){
+@media screen and (max-height: 815px){
     .main{
-        margin-top: 100px;
+        margin-top: 90px;
     }
     footer{
-        margin-top: 278px;
+        margin-top: 125px;
     }
 }
-@media screen and (max-height: 1366px){
-    .main{
-        margin-top: 150px;
-    }
-    footer{
-        margin-top: 430px;
-    }
-}
+/* #endregion */

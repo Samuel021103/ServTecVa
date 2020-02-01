@@ -3,22 +3,20 @@ body{
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     font-family: 'Passion One', cursive;
-    margin-top: 80px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
 }
-/* #region Barra de navegación */
-p{
-    margin-bottom: 1.6em;
+body .main{
+    padding-top: 150px;
 }
+/* #region Barra de menú */
 .container{
     width: 85%;
     max-width: 850px;
     margin: 0 auto;
 }
 .header{
-    font-size: 1.3rem;
     background: #000;
     padding: 2rem 0;
     height: 50px;
@@ -36,7 +34,7 @@ img[src="src/logo1.png"]{
     height: auto;
 }
 .a{
-    color: #fff;
+    color: #000;
 }
 .logo-nav-conatiner{
     display: flex;
@@ -53,17 +51,49 @@ img[src="src/logo1.png"]{
     padding: 0;
     list-style: none;
 }
-.navigation ul li{
-    display: inline-block;
-}
 .navigation ul li a{
+    font-size: 20px;
     display: block;
     padding: 0.5rem 1rem ;
     transition: all 0.4s linear;
     border-radius: 10px ;
 }
 .navigation ul li a:hover{
-    background:  #4a4a4a;
+    background:  rgba(0, 0, 0, .8);
+    color: #fff;
+}
+.icono{
+    display: block;
+    animation: moverIzquierda 1s ease-in;
+    z-index: 100;
+}
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 115px;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    left: 50%;
+    right: 50%;
+    flex-direction: column;
+    width: auto;
+    transition: all 1s ease;
+    background: rgba(0, 0, 0, .0);
+    border-radius: 10px;
+    padding: 5px;
+}
+.uno{
+    -webkit-clip-path: circle(140.9% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+.dos{
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+.menu{
+    width: 40px;
+    height: auto;
 }
 /* #endregion */
 /* #region Footer */
