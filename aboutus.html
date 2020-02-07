@@ -12,6 +12,7 @@
 <body>
     <header class="header">
         <nav>
+
         <div class="container logo-nav-conatiner">
             <a href="index.html"><img class="Logo" src="src/logo1.png" alt=""></a><a href="index.html" class="Logo">ServTecVa</a>
             <nav class="navigation">
@@ -26,20 +27,31 @@
             </nav>
         </div>
         </nav>
+        <a class="sec" id="sec" href="#sec"><img class="img3" id="img3" src="src/arrow-down.svg" alt=""></a>
+        <div id="seccion" class="seccion one">
+            <ul>
+                <li><a href="#sec1">¿Qué somos?</a></li>
+                <li><a href="#sec2">¿Qué reparamos?</a></li>
+                <li><a href="#sec3">¿Dónde nos ubicamos?</a></li>
+            </ul>
+        </div>
     </header>
+        <script src="secmenu.js"></script>
     <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
     <script src="main.js"></script>
-    <section id="sec1">
+    <section id="sec1" class="seccion1">
         <div class="contenedor-texto main">
             <h2>¿Qué somos?</h2>
             <p>Somos una microempresa dedicada a la reparación de línea blanca y herramientas para la construcción</p>
-            <a href="#sec2"><img src="src/arrow-down.svg" alt=""> </a>
         </div>
-        <img src="src/aboutus.png" alt="">
+        <img class="img1" src="src/aboutus.png" alt="">
     </section>
+    <div class="imagenes">
+        <img src="src/construccion.png" alt="">
+        <img src="src/linea-blanca.png" alt="">
+    </div>
     <section id="sec2">
         <div class="contenedor-texto">
-            <!-- <a class="up up2" href="#sec1"><img src="src/arrow-down.svg" alt=""></a> -->
             <h2 class="reparar">¿Qué reparamos?</h2>
             <h4>A continuación le dejamos una lista de los productos que reparamoos, para más información <a class="boton" href="contacto.html">contactanos.</a></h4>
             <ul class="lineaBlanca">
@@ -50,43 +62,44 @@
                 <li>Planchas</li>
                 <li>Licuadoras</li>
             </ul>
-            <ul class="construccion">
-                <h1>Herramientas para la costrucción</h1>
-                <li>Taladros</li>
-                <li>Esmeriles</li>
-                <li>Sierras</li>
-                <li>Pulidores</li>
-                <li>Demoledoras</li>
-                <li>Rauters</li>
-                <li>Lijadoras</li>
-                <li>Sierras caladoras</li>
-                <li>Batidores</li>
-            </ul>
-            <a class="up" href="#sec1"><img src="src/arrow-down.svg" alt=""></a>
-            <a href="#sec3"><img src="src/arrow-down.svg" alt=""></a>
+            <div class="s">
+                <ul class="construccion">
+                    <h1 class="conss">Herramientas para la costrucción</h1>
+                    <li>Taladros</li>
+                    <li>Esmeriles</li>
+                    <li>Sierras</li>
+                    <li>Pulidores</li>
+                    <li>Demoledoras</li>
+                    <li>Rauters</li>
+                    <li>Lijadoras</li>
+                    <li>Sierras caladoras</li>
+                    <li>Batidores</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section id="sec3">
         <div class="contenedor-texto">
             <h2>¿Dónde nos ubicamos?</h2>
             <p>Av 16 de Septiembre, San Lorenzo Zitlaltepec, 55620 San Juan Zitlaltepec, Méx.</p>
-            <a class="up up2" href="#sec1"><img src="src/arrow-down.svg" alt=""></a>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7507.410537436021!2d-99.14862630000002!3d19.81008989999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1578796794916!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </section>
+    <div class="ubi">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7507.410537436021!2d-99.14862630000002!3d19.81008989999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1578796794916!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
 <footer>
     <div class="container-footer-all">
     <div class="container-Body">
         <div class="col1">
-            <h1>Números de contacto</h1>
-            <p>Tel.(591)-69-014-38.</p>
-            <p>Cel.5516238570</p>
+            <h1 class="titulos">Números de contacto</h1>
+            <p class="sub">Tel.(591)-69-014-38.</p>
+            <p class="sub">Cel.5516238570</p>
         </div>
         <div class="col2">
-            <h1>Nuestras redes sociales</h1>
+            <h1 class="titulos">Nuestras redes sociales</h1>
             <div class="row">
               <img src="src/facebook.png" alt="">
-                <a href="https://www.facebook.com/servtecva/">Siguenos en facebook</a>
+                <a class="sub" href="https://www.facebook.com/servtecva/">Siguenos en facebook</a>
             </div>
         </div>  
     </div>

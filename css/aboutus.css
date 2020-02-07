@@ -1,5 +1,4 @@
 body{
-    background: #7F7FD5;
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     font-family: 'Passion One', cursive;
@@ -34,7 +33,7 @@ img[src="src/logo1.png"]{
     height: auto;
 }
 .a{
-    color: #000;
+    color: #fff;
 }
 .logo-nav-conatiner{
     display: flex;
@@ -59,8 +58,8 @@ img[src="src/logo1.png"]{
     border-radius: 10px ;
 }
 .navigation ul li a:hover{
-    background:  rgba(0, 0, 0, .8);
-    color: #fff;
+    background:  rgba(255, 255, 255, 0.8);
+    color: #000;
 }
 .icono{
     display: block;
@@ -74,12 +73,11 @@ img[src="src/logo1.png"]{
     justify-content: space-around;
     align-items: center;
     height: auto;
-    left: 50%;
-    right: 50%;
+    right: 10%;
     flex-direction: column;
     width: auto;
     transition: all 1s ease;
-    background: rgba(0, 0, 0, .0);
+    background: rgba(0, 0, 0, .7);
     border-radius: 10px;
     padding: 5px;
 }
@@ -213,6 +211,10 @@ footer{
 }
 /* #endregion */
 /* #region Secciones */
+/* Imagenes */
+.imagenes{
+    display: none;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -247,11 +249,16 @@ section a img{
 section img{
     height: 60%;
 }
-section iframe{
+.ubi iframe{
     box-shadow: 10px 10px 10px 10px #000;
-    animation: aparecer 1s ease-in;
-    height: 50%;
     width: 50%;
+}
+.ubi{
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
 }
 section:nth-child(2){
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
@@ -291,7 +298,251 @@ section .construccion{
     /* margin-top: 0; */
     text-align: center;
 }
+.e{
+    transition: .8s ease-in-out;
+    transform: rotate(-180deg);
+}
+.img3{
+    transition: .8s ease-in-out;
+}
 .up2{
     margin-left: 100px;
+}
+/* menu de secciones */
+.sec{
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+.sec img{
+    width: 40px;
+    height: auto;
+}
+.seccion{
+    /* transform: rotate(-180deg); */
+    position: fixed;
+    display: flex;
+    bottom: 60px;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    right: 1%;
+    flex-direction: column;
+    width: auto;
+    transition: all 1s ease;
+    background: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    padding: 5px;
+}
+.seccion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.seccion ul li a{
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    padding: 0.5rem 1rem ;
+    transition: all 0.4s linear;
+    border-radius: 10px ;
+    text-decoration: none;
+}
+.seccion ul li a:hover{
+    background:  #fff;
+    color: #000;
+}
+.one{
+    -webkit-clip-path: circle(140.9% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+/* .img3{
+    transform: rotate(180deg);
+} */
+.two {
+    transform: rotate(-360deg);
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+}
+/* #endregion */
+
+/* #region Responsivas */
+@media screen and (max-width: 1090px){
+    .img1{
+        height: 300px;
+    }
+
+}
+@media screen and (max-width: 970px){
+    .img1{
+        padding-top: 100px;
+        height: 250px;
+    }
+    .contenedor-texto h2{
+        font-size: 3rem;
+    }
+    .contenedor-texto p{
+        font-size: 1.8rem;
+    }
+    .contenedor-texto ul li{
+        font-size: 20px;
+    }
+    .contrenedor-texto ul h1{
+        font-size: 1.7rem;
+    }
+    .ubi iframe{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 800px){
+    .img1{
+        height: 220px;
+    }
+    .contenedor-texto h2{
+        font-size: 2.2rem;
+    }
+    .contenedor-texto h4{
+        font-size: 1.2rem;
+    }
+    .contenedor-texto p{
+        font-size: 1.2rem;
+    }
+    .contenedor-texto ul li{
+        font-size: 18px;
+    }
+    .lineaBlanca h1{
+        font-size: 19px;
+    }
+    .conss{
+        font-size: 19px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 760px){
+    .img1{
+        display: none;
+    }
+    .seccion1 h2{
+        margin-top: -190px;
+    }
+    .imagenes{
+        justify-content: center;
+        margin-top: -300px;
+        display: flex;
+        width: 100%;
+    }
+    .imagenes img{
+        height: 150px;
+        width: auto;
+    }
+    .conss{
+        margin-right: 100px;
+    }
+    footer .titulos{
+        font-size: 29px;
+    }
+    footer .sub{
+        font-size: 15px;
+    }
+    footer .col2{
+        margin-left: 90px;
+    }
+}
+@media scrteen and (max-width: 700px){
+    .ubi iframe{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 635px){
+    .contenedor-texto h2{
+        font-size: 1.8rem;
+    }
+    .contenedor-texto p{
+        font-size: 1rem;
+    }
+    .contenedor-texto h4{
+        font-size: 1rem;
+    }
+    .contenedor-texto ul li{
+        font-size: 15px;
+    }
+    section .lineaBlanca h1{
+        font-size: 17px;
+    }
+    section .construccion h1{
+        font-size: 17px;
+    }
+    .ubi iframe{
+        height: 230px;
+    }
+    .ubi{
+        margin-top: -250px;
+    }
+}
+@media screen and (max-width: 535px){
+    .conss{
+        margin-right: 50px;
+    }
+    .ubi iframe{
+        height: 200px;
+    }
+}
+@media screen and (max-width:500px){
+    .conss{
+        margin-right: 30px;
+    }
+    footer .titulos{
+        font-size: 23px;
+    }
+    footer .sub{
+        font-size: 13px;
+    }
+    footer .col2{
+        margin-left: 70px;
+    }
+    .menu{
+        width: 30px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 463px){
+    .conss{
+        margin-right: 10px;
+    }
+    .imagenes img{
+        height: 100px;
+        width: auto;
+    }
+    .copyrigth{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 453px){
+    .construccion{
+        margin-top: 10px;
+        margin-right: 50%;
+    }
+    .lineaBlanca{
+        left: 0;
+    }
+}
+@media screen and (max-width: 400px){
+    .ubi iframe{
+        height: 160px;
+    }
+    .construccion{
+        margin-top: 10px;
+        margin-right: 40%;
+    }
+}
+@media screen and (max-width: 3600px){
+    .construccion{
+        margin-right: 30%;
+    }
+}
+@media screen and (max-width: 330px){
+    .construccion{
+        margin-right: 20%;
+    }
 }
 /* #endregion */

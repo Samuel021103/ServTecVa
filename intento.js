@@ -1,7 +1,8 @@
 let boton = document.getElementById("icono");
 let enlaces = document.getElementById("enlaces");
-let i = 0;
-let botton =document.getElementById("boton");
+let  i = 0;
+let botton = document.getElementById("boton");
+
 
 boton.addEventListener("click", function(){
     if(i==0){
@@ -13,3 +14,4 @@ boton.addEventListener("click", function(){
         i = 0;
     }
 })
+
