@@ -365,7 +365,6 @@ section .construccion{
     clip-path: circle(150% at 0 0);
 }
 /* #endregion */
-
 /* #region Responsivas */
 @media screen and (max-width: 1090px){
     .img1{

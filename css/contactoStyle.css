@@ -54,6 +54,7 @@ img[src="src/logo1.png"]{
     list-style: none;
 }
 .navigation ul li a{
+    color: #fff;
     font-size: 20px;
     display: block;
     padding: 0.5rem 1rem ;
@@ -61,12 +62,11 @@ img[src="src/logo1.png"]{
     border-radius: 10px ;
 }
 .navigation ul li a:hover{
-    background:  rgba(0, 0, 0, .8);
-    color: #fff;
+    background:  rgba(255, 255, 255, 0.8);
+    color: #000;
 }
 .icono{
     display: block;
-    animation: moverIzquierda 1s ease-in;
     z-index: 100;
 }
 .enlaces{
@@ -76,12 +76,11 @@ img[src="src/logo1.png"]{
     justify-content: space-around;
     align-items: center;
     height: auto;
-    left: 50%;
-    right: 50%;
+    right: 0;
     flex-direction: column;
     width: auto;
     transition: all 1s ease;
-    background: rgba(0, 0, 0, .0);
+    background: rgba(0, 0, 0, .8);
     border-radius: 10px;
     padding: 5px;
 }
@@ -225,7 +224,7 @@ input:focus~.barra::before, textarea:focus~.barra::before{
 .barra{
     position: relative;
     display: block;
-    width: 100%;
+    width: 105%;
 }
 .barra::before{
     content: '';
@@ -307,4 +306,99 @@ button{
 }
 /* #endregion */
 /* #region resposivas */
+@media screen and (max-width:1218px){
+    form{
+        margin: auto;
+        width: 40%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1046px){
+    label{
+        font-size: 15px;
+    }
+    .barra{
+        width: auto;
+    }
+}
+@media screen and (max-width: 915px){
+    form{
+        width: 50%;
+    }
+    .barra{
+        width: 105%;
+    }
+}
+@media screen and (max-width: 800px){
+    form{
+        width: 60%;
+    }
+    footer .col2{
+        margin-left: 100px;
+    }
+    footer .titulos{
+        font-size: 30px;
+    }
+    footer .sub{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 590px){
+    form{
+        width: 70%;
+    }
+    form h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:490px){
+    form{
+        width: 80%;
+    }
+    label{
+        font-size: 14px;
+    }
+    button{
+        font-size: 15px;
+        width: 80px;
+    }
+}
+@media screen and (max-width: 380px){
+    form h1{
+        font-size: 30px;
+    }
+    form{
+        padding: 10px;
+    }
+    footer .titulos{
+        font-size: 20px;
+    }
+    footer .sub{
+        font-size: 13px;
+    }
+    .copyrigth{
+        font-size: 15px;
+    }
+    footer  .col2{
+        margin-left: 10px;
+    }
+    .container img[src = "src/logo1.png"]{
+        width: 40px;
+    }
+    .barra{
+        width: 109%;
+    }
+    .Logo{
+        font-size: 30px;
+    }
+    .container .menu{
+        width: 30px;
+    }
+    .enlaces{
+        top: 12%;
+    }
+    .header{
+        padding: 1rem 0; 
+    }
+}
 /* #endregion */
